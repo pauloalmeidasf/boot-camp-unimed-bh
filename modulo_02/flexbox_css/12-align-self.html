@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .align-container{
+            align-items: center;
+        }
+        .direction{
+            flex-direction: column;
+        }
+        .item{
+            background-color: orangered;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .align-self-center{
+            align-self: center;
+        }
+        .align-self-flex-start{
+            align-self: flex-start;
+        }
+        .align-self-flex-end{
+            align-self: flex-end;
+        }
+        .align-self-baseline{
+            align-self: baseline;
+        }
+        .align-self-stretch{
+            align-self: stretch;
+        }
+        .align-self-auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>ROW</h2>
+    <div class="flex-container align-container">
+        <div class="item">AAA</div>
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">ITEM 4</div>
+    </div>
+    <div class="flex-container">
+        <div class="item align-self-center">AAA</div>
+        <div class="item align-self-flex-start">123</div>
+        <div class="item align-self-stretch">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item align-self-flex-end">ITEM 4</div>
+    </div>
+    <div class="flex-container">
+        <div class="item align-self-center">AAA</div>
+        <div class="item align-self-flex-start">AAA</div>
+        <div class="item align-self-flex-end">AAA</div>
+        <div class="item align-self-stretch">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    </div>
+    <h2>COLUMN</h2>
+    <div class="flex-container align-container direction">
+        <div class="item">AAA</div>
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">ITEM 4</div>
+    </div>
+    <div class="flex-container direction">
+        <div class="item align-self-center">AAA</div>
+        <div class="item align-self-flex-start">123</div>
+        <div class="item align-self-stretch">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item align-self-flex-end">ITEM 4</div>
+    </div>
+    <div class="flex-container direction">
+        <div class="item align-self-center">AAA</div>
+        <div class="item align-self-flex-start">AAA</div>
+        <div class="item align-self-flex-end">AAA</div>
+        <div class="item align-self-stretch">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    </div>
+</body>
+</html>
