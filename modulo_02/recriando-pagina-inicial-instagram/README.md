@@ -1,0 +1,1 @@
+Neste curso, recriamos, com os ensinamentos da Professora Gabriela, a página inicial do Instagram.
